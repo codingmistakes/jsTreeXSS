@@ -1,0 +1,1 @@
+﻿<img src=nonexisting.png onerror=alert(1) />

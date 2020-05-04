@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div style="width:60%; margin:auto;">
+        <center>
+            <div class="row" style="position: relative">
+                <div class="col-md-12">
+                    <h2>Tree View of Company Structure </h2>
+                </div>
+            </div>
+        </center>
+        <br/>
+        <div id="jstree">
+            <ul>
+                <li class="jstree-open">
+                    Accounts
+                    <ul>
+                        <li>
+                            John Doe
+                            <ul>
+                                <li>TeamMember</li>
+                                <li>john.doe@example.com</li>
+                                <li>+1047382627</li>
+                            </ul>
+                        </li>
+                        <li>Adam Smith</li>
+                        <li>Cason Dione</li>
+                    </ul>
+                </li>
+                <li>
+                    Departments
+                    <ul>
+                        <li>
+                            Legal
+                            <ul>
+                                <li>Accounts</li>
+                            </ul>
+                        </li>
+                        <li>Sales</li>
+                        <li>Finance</li>
+                        <li>IT</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <br />
+
+        <div class="row">
+            <div class="col-md-8">
+                <input type="text" id="name" class="form-control" />
+            </div>
+            <div class="col-md-2">
+                <input type="button" value="Add Node" class="btn btn-primary" onclick="add()" />
+            </div>
+            <div class="col-md-2">
+                <input type="button" value="Remove Node" class="btn btn-danger"  />
+            </div>
+        </div>
+
